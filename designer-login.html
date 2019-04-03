@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu_Login</title>
+    <style>
+        html, body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0
+        }
+        .content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url("imagem_tecno.png") 
+        }
+
+        .content > .container{
+            width: 400px;
+        }
+
+        .content > .container > .font{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            margin-bottom: 60px;
+            font-family: Arial, Helvetica, sans-serif
+
+        }
+        .content > .container > .bloco{
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;       
+        }
+        .content > .container > .bloco > .logo {
+            width: 80px;
+            height: 80px;
+            z-index: 1000;
+            top: -30px;
+            position: relative
+        }
+
+        .content > .container > .bloco > .logo > img {
+            max-width: 100%;
+            border-radius:100px
+        }
+        .content > .container > .bloco > #formulario{
+            width: 100%;
+            padding: 10px;
+        }
+        #form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        button{
+            width: 150px;
+            border-radius: 8px;
+            background-color: rgba(6, 50, 61, 0.719);
+            height: 40px;
+            margin: 20px;
+            font-family: cursive;
+            font-weight: bold
+        }
+        
+        .line > input{
+            border-radius: 5px;
+            width: 250px
+        }
+
+        
+    </style>
+</head>
+<body>
+        <div class="content">
+            <div class="container">
+                
+                <div class="font">
+                    <h1> Lets's get started now! </h1>
+                    <p> Or create an account if not registered yet!</p>
+                </div>
+
+                <div class="bloco">
+                    <div class="logo">
+                        <img src="imagem.jpg" alt="">                   
+                    </div>
+
+                    <div id="formulario">
+                        <form id="form" autocomplete="off">
+            
+                            <div class="line">
+                                <p>Email:</p>
+                                <input class="campo_email" type="text">
+                            </div>
+                            <div class="line">
+                                <p>Password:</p>
+                                <input class="campo_email" type="password">
+                            </div>
+
+                            <button>Sing in</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+                    </div>
+                </div> 
+                
+            </div>
+        </div>
+</body>
+</html>
